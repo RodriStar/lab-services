@@ -1,0 +1,35 @@
+.footer {
+  width: 100%;
+  padding: 0.5rem 2rem;         
+
+  background-color: #0b1c2d;
+  color: #b0bec5;
+
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  width: 100%;
+  max-width: 1200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+
+  text-align: center;
+}
+
+/* Marca */
+.footer-brand {
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: #4caf50; /* verde de marca */
+}
+
+/* Texto legal */
+.footer-copy {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}

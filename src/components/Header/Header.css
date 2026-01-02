@@ -1,0 +1,66 @@
+/* Links generales */
+.header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header {
+  position: fixed;           /* siempre visible */
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 2rem;
+
+  background-color: #0b1c2d;;
+
+  z-index: 10;
+
+  transition: all 0.3s ease;
+
+
+}
+
+
+/* Logo */
+.header-logo {
+  font-family: "Inter", "Poppins", "Montserrat", system-ui, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  color: #4CAF50;              /* color principal */
+
+  cursor: pointer;
+  user-select: none;
+
+  text-shadow:
+    0 3px 6px rgba(0, 0, 0, 0.8),
+    0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* énfasis sutil */
+.header-logo span {
+  font-weight: 700;
+  letter-spacing: 0.22em;
+}
+
+.header-logo:hover {
+  opacity: 0.85;
+}
+
+
+/* Ícono carrito */
+.header-cart {
+  font-size: 25px;
+  cursor: pointer;
+  color: #fff;               /* blanco */
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+
