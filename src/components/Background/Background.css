@@ -7,14 +7,22 @@
   background-repeat: no-repeat;
 
   display: flex;
-  align-items: flex-start;   
-  justify-content: center;
+  flex-direction: column;      
+  align-items: center;
 
-  padding-top: 40px;        
+  padding-top: 40px;            
 }
 
-/* Contenedor superior del SearchBar */
+/* SearchBar arriba */
 .background-top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Contenido (cards) */
+.background-content {
   width: 100%;
   display: flex;
   justify-content: center;
