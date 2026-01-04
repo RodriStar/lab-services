@@ -8,7 +8,8 @@ import detectorImg from "../../assets/images/product-images/detector.jpg";
 import proteinAnalyzerImg from "../../assets/images/product-images/protein-analyzer.jpg";
 import freezingPointImg from "../../assets/images/product-images/freezing-point.jpg";
 import centrifugeImg from "../../assets/images/product-images/centrifuge.jpg";
-import ProductCard from "../ProductCard/ProductCard";
+import ProductList from "../ProductList/ProductList";
+
 
  const equipments = [
   {
@@ -68,18 +69,7 @@ const Home = () => {
       <Header />
       <main className="page-content">
         <Background>
-          <div className="products-flex">
-            {equipments.map((equipment) => (
-             <ProductCard
-              key={equipment.id}
-              name={equipment.name}
-              price={equipment.price}
-              category={equipment.category}
-              isAvailable={equipment.isAvailable}
-              imageUrl={equipment.imageUrl}
-              />
-            ))}
-          </div>
+          <ProductList products={equipments} />
         </Background>
       </main>
       <Footer />
