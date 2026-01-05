@@ -9,7 +9,8 @@ import proteinAnalyzerImg from "../../assets/images/product-images/protein-analy
 import freezingPointImg from "../../assets/images/product-images/freezing-point.jpg";
 import centrifugeImg from "../../assets/images/product-images/centrifuge.jpg";
 import ProductList from "../ProductList/ProductList";
-
+import SearchBar from "../SearchBar/SearchBar";
+import { useState } from "react";
 
  const equipments = [
   {
@@ -63,14 +64,28 @@ import ProductList from "../ProductList/ProductList";
 ];
 
 
+
 const Home = () => {
+
+  const [searchTerm, setSearchTerm] = useState("");
+  const filteredEquipments = equipments.filter((equipment) =>
+  `${equipment.name} ${equipment.category}`
+    .toLowerCase()
+    .includes(searchTerm.toLowerCase())
+  );
+
   return (
     <div className="page">
       <Header />
       <main className="page-content">
-        <Background>
-          <ProductList products={equipments} />
-        </Background>
+       <Background>
+        <SearchBar
+          value={searchTerm}
+          onChange={setSearchTerm}
+        />
+        <ProductList products={filteredEquipments} />
+      </Background>
+
       </main>
       <Footer />
     </div>

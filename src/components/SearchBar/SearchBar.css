@@ -35,8 +35,14 @@
   background: none;
 
   font-size: 1.1rem;
-  cursor: not-allowed;
+  cursor: pointer;
 
   color: #4caf50; /* verde de marca */
   padding: 0 0.5rem;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.searchbar-button:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
 }

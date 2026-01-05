@@ -1,17 +1,16 @@
 import "./SearchBar.css";
 
-const SearchBar = () => {
+const SearchBar = ({ value, onChange }) => {
   return (
     <div className="searchbar">
       <input
         type="text"
         placeholder="Buscar equipos de laboratorio..."
         className="searchbar-input"
-        disabled
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
       />
-      <button className="searchbar-button" disabled>
-        🔍
-      </button>
+      <span className="searchbar-icon">🔍</span>
     </div>
   );
 };
