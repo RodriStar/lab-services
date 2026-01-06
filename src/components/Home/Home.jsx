@@ -26,7 +26,7 @@ import { useState } from "react";
     name: "Incubadora de bacterias, marca: IncMax, Mod.: IM-5846",
     price: "$1,520,000 CLP",
     category: "Microbiología",
-    isAvailable: true,
+    isAvailable: false,
     imageUrl: incubatorImg,
   },
   {
@@ -55,7 +55,7 @@ import { useState } from "react";
   },
   {
     id: 6,
-    name: "Centrífuga para determinación de materia grasa en leche cruda, marca: FunkeGerbe, Mod.: FG-4690",
+    name: "Centrífuga para determinar materia grasa en leche cruda, marca: FunkeGerbe, Mod.: FG-4690",
     price: "$6,200,000 CLP",
     category: "Química",
     isAvailable: true,

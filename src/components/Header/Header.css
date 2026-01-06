@@ -64,3 +64,26 @@
 }
 
 
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* Corazón */
+.header-like {
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #777;
+
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.header-like:hover {
+  transform: scale(1.1);
+}
+
+/* Estado activo */
+.header-like.liked {
+  color: #e53935; /* rojo */
+}

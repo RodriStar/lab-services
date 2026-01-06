@@ -1,0 +1,28 @@
+.btn {
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 0.9rem;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Primario (Comprar) */
+.btn-primary {
+  background-color: #4caf50;
+  color: #081624;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #43a047;
+  transform: translateY(-1px);
+}
+
+/* Deshabilitado */
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

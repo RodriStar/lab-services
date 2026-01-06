@@ -1,5 +1,6 @@
 import "./ProductCard.css";
 import defaultImage from "../../assets/images/image-default.jpg";
+import Button from "../Button/Button";
 
 const ProductCard = ({ name, price, category, isAvailable, imageUrl }) => {
   return (
@@ -18,9 +19,14 @@ const ProductCard = ({ name, price, category, isAvailable, imageUrl }) => {
         <span className="product-category">{category}</span>
         <h3 className="product-name">{name}</h3>
         <p className="product-price">{price}</p>
-        <span className={`product-status ${isAvailable ? "available" : "unavailable"}`}>
+        <span
+          className={`product-status ${
+            isAvailable ? "available" : "unavailable"
+          }`}
+        >
           {isAvailable ? "Disponible" : "No disponible"}
         </span>
+        <Button text="Comprar" disabled={!isAvailable} />
       </div>
     </div>
   );
